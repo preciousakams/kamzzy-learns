@@ -32,3 +32,4 @@ Give a ⭐️ if you like this project!
 
 ### Acknowledgments
 * Microverse
+* Original design idea: [Cindy Shin](https://www.behance.net/adagio07)
