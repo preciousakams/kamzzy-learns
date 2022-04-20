@@ -60,7 +60,12 @@ main {
 }
 
 .row {
-  margin: 12px;
+  justify-content: space-evenly;
+}
+
+.titleDiv {
+  text-align: center;
+  padding: 6px;
 }
 
 .home-action-div {
@@ -77,6 +82,37 @@ main {
   width: 320px;
   text-align: center;
   padding: 24px;
+}
+
+.main-col {
+  background-color: #434344;
+}
+
+.toggle,
+.toggle:not(:checked) ~ .toggled {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 24px;
+  overflow: hidden;
+  margin: 2% 22%;
+  width: 1px;
+}
+
+.toggled {
+  margin: 0;
+}
+
+.toggle:focus ~ label {
+  color: #fff;
+}
+
+.toddle2 ~ label {
+  margin: 48px 0;
+  display: block;
+  border: 5px solid #d3d3d3;
+  padding-top: 5px;
+  height: 48px;
+  background-color: #ec5242;
 }
 
 .speakers {
@@ -158,20 +194,22 @@ main {
 .pastT {
   text-align: center;
   background-color: #d3d3d3;
+  width: 100%;
+  padding: 0 10%;
 }
 
 .card1 {
   background: url(/icons/bg1.png) no-repeat;
-  background-size: 100% 100%;
-  margin: 4% 20%;
-  height: 300px;
+  background-size: contain;
+  height: 200px;
+  margin-bottom: 5px;
 }
 
 .card2 {
   background: url(/icons/bg2.png) no-repeat;
-  background-size: 100% 100%;
-  margin: 4% 20%;
-  height: 300px;
+  background-size: contain;
+  height: 200px;
+  margin-bottom: 12px;
 }
 
 footer {
@@ -274,29 +312,6 @@ footer .row div a img {
     transform: translateY(-8px) rotate(-45deg);
   }
 
-  .toggle,
-  .toggle:not(:checked) ~ .toggled {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 24px;
-    overflow: hidden;
-    margin: 2% 22%;
-    width: 1px;
-  }
-
-  .toggle:focus ~ label {
-    color: #fff;
-  }
-
-  .toddle2 ~ label {
-    margin: 48px 0;
-    display: block;
-    border: 5px solid #d3d3d3;
-    padding-top: 5px;
-    height: 48px;
-    background-color: #ec5242;
-  }
-
   .fa-angle-down,
   .fa-angle-up {
     color: #ec5242;
@@ -312,7 +327,8 @@ footer .row div a img {
     width: 1px;
   }
 }
-
+/* ///////////////////////////////////////////////////////
+////////////////////////////////////////////////////////// */
 @media screen and (min-width: 768px) {
   .logo {
     display: inline-block;
@@ -335,11 +351,11 @@ footer .row div a img {
     font-weight: 700;
   }
 
-  .toggle {
+  .toggle2 {
     display: none;
   }
 
-  .toggle2 {
-    display: none;
+  .home {
+    padding: 0 15%;
   }
 }

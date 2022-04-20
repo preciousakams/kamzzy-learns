@@ -20,6 +20,7 @@ const fSpeakers = [{
   red: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
   p: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cumque inventore reiciendis voluptatibus a nulla aut.',
 },
+
 ];
 const featuredSpeakers = (feature) => {
   const card = document.createElement('div');
