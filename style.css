@@ -329,6 +329,10 @@ footer .row div a img {
   .toggled.active {
     display: flex;
   }
+
+  .socialNav {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -340,7 +344,7 @@ footer .row div a img {
     display: flex;
     position: absolute;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%;
     gap: 5%;
     top: 5%;
@@ -351,6 +355,18 @@ footer .row div a img {
   .nav-menu li a {
     color: #272a31;
     font-weight: 700;
+  }
+
+  .socialNav {
+    justify-content: flex-end;
+    background-color: #272a31;
+    margin: 0;
+    padding-right: 15%;
+    text-decoration: none;
+  }
+
+  .socialNav li a {
+    color: #d3d3d3;
   }
 
   .toggle2 {
