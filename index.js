@@ -9,13 +9,37 @@ document.querySelectorAll('.nav-link').forEach((n) => n.addEventListener('click'
   navMenu.classList.remove('active');
 }));
 const fSpeakers = [{
-  speakerImg: '/icons/male.jpg',
+  speakerImg: 'icons/male.jpg',
   h4: 'molestias debitis',
   red: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
   p: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cumque inventore reiciendis voluptatibus a nulla aut.',
 },
 {
-  speakerImg: '/icons/female.jpg',
+  speakerImg: 'icons/female.jpg',
+  h4: 'molestias debitis',
+  red: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+  p: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cumque inventore reiciendis voluptatibus a nulla aut.',
+},
+{
+  speakerImg: 'icons/male3.jpg',
+  h4: 'molestias debitis',
+  red: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+  p: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cumque inventore reiciendis voluptatibus a nulla aut.',
+},
+{
+  speakerImg: 'icons/female3.jpg',
+  h4: 'molestias debitis',
+  red: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+  p: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cumque inventore reiciendis voluptatibus a nulla aut.',
+},
+{
+  speakerImg: 'icons/male2.jpg',
+  h4: 'molestias debitis',
+  red: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+  p: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cumque inventore reiciendis voluptatibus a nulla aut.',
+},
+{
+  speakerImg: 'icons/female2.jpg',
   h4: 'molestias debitis',
   red: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
   p: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, cumque inventore reiciendis voluptatibus a nulla aut.',
@@ -24,16 +48,16 @@ const fSpeakers = [{
 ];
 const featuredSpeakers = (feature) => {
   const card = document.createElement('div');
-  card.classList = 'card hstack';
+  card.classList = 'speaker-col col-md-6 row';
   const speakerImg = document.createElement('div');
-  speakerImg.classList = 'speaker-img';
+  speakerImg.classList = 'speaker-img col-sm-4';
   const sImg = document.createElement('img');
   sImg.setAttribute = 'src';
   sImg.src = feature.speakerImg;
   sImg.setAttribute = 'alt';
   sImg.alt.innerHTML = 'speakerImage';
   const speakerDiv = document.createElement('div');
-  speakerDiv.classList = 'speakerDiv';
+  speakerDiv.classList = 'speakerDiv col-sm-8';
   const h4 = document.createElement('h4');
   h4.innerHTML = feature.h4;
   const p = document.createElement('p');
@@ -43,8 +67,8 @@ const featuredSpeakers = (feature) => {
   hr2.id = 'hr';
   const p2 = document.createElement('p');
   p2.innerHTML = feature.p;
-  const speakers = document.querySelector('.speakers');
-  speakers.append(card);
+  const row = document.querySelector('.row');
+  row.append(card);
   card.append(speakerImg);
   speakerImg.append(sImg);
   card.append(speakerDiv);
@@ -54,3 +78,20 @@ const featuredSpeakers = (feature) => {
   speakerDiv.append(p2);
 };
 fSpeakers.forEach((feature) => featuredSpeakers(feature));
+
+const border = document.querySelector('.border');
+const toggled = document.querySelector('.toggled');
+
+// function result() {
+border.addEventListener('click', () => {
+  toggled.classList.toggle('active');
+});
+
+// }
+
+// const toggled = document.querySelector('.toggled');
+// toggled.style.display = 'none';
+// const border = document.querySelector('.border');
+// border.addEventListener('click', () => {
+//   toggled.style.display = 'flex';
+// });

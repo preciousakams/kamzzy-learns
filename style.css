@@ -2,12 +2,13 @@ main {
   background-color: #fff;
   font-family: 'lato', sans-serif;
   color: #272a31;
+  overflow: auto;
 }
 
 .home {
   height: 100%;
   width: 100%;
-  background: url(/icons/header1.png) no-repeat;
+  background: url(icons/header1.png) no-repeat;
   background-size: 100% 100%;
   padding: 24px 24px 52px 24px;
 }
@@ -91,41 +92,42 @@ footer h4 {
   background-color: #434344;
 }
 
-.toggled {
-  margin: 0;
+.border {
+  text-align: center;
+  padding: 12px;
+  font-family: 'cocogoose', sans-serif;
+  font-size: large;
 }
 
-.toggle,
-.toggle:not(:checked) ~ .toggled {
+.border:hover {
+  background: #d3d3d3;
+  color: #272a31;
+
+  /* cursor: pointer; */
+  transition: 0.4s;
+}
+
+.border button {
   border: 0;
-  clip: rect(0 0 0 0);
-  height: 24px;
-  overflow: hidden;
-  margin: 2% 22%;
-  width: 1px;
+  background-color: #272a31;
+  color: #d3d3d3;
 }
 
-.toddle2 ~ label {
-  margin: 48px 0;
-  display: block;
-  border: 5px solid #d3d3d3;
-  padding-top: 5px;
-  height: 48px;
-  background-color: #ec5242;
-}
-
-.toggle:focus ~ label {
-  color: #fff;
+.border button:hover {
+  background-color: #d3d3d3;
+  color: #272a31;
 }
 
 .speakers {
   background-color: #fff;
   color: #272a31;
+  width: 100%;
 }
 
-.speakers .card {
+.speaker-col {
   background-color: #fff;
-  margin: 12px 0;
+  color: #272a31;
+  padding: 5px;
 }
 
 .speakers h3 {
@@ -137,12 +139,13 @@ footer h4 {
 }
 
 .speaker-img {
-  background: url(/icons/monochromebox.png) left top no-repeat;
+  background: url(icons/monochromebox.png) left top no-repeat;
   padding: 0 24px;
 }
 
 .speaker-img img {
   width: 150px;
+  height: 150px;
   margin-top: 24px;
   margin-left: 12px;
 }
@@ -157,7 +160,7 @@ footer h4 {
 }
 
 .about {
-  background: url(/icons/header1.png) no-repeat;
+  background: url(icons/header1.png) no-repeat;
   background-size: 100% 100%;
   padding-bottom: 24px;
 }
@@ -202,14 +205,14 @@ footer h4 {
 }
 
 .card1 {
-  background: url(/icons/bg1.png) no-repeat;
+  background: url(icons/bg1.png) no-repeat;
   background-size: contain;
   height: 200px;
   margin-bottom: 5px;
 }
 
 .card2 {
-  background: url(/icons/bg2.png) no-repeat;
+  background: url(icons/bg2.png) no-repeat;
   background-size: contain;
   height: 200px;
   margin-bottom: 12px;
@@ -316,14 +319,13 @@ footer .row div a img {
     color: #ec5242;
   }
 
-  .toggle2,
-  .toggle2:not(:checked) ~ .toggled2 {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 5px;
-    overflow: hidden;
-    margin: 2% 22%;
-    width: 1px;
+  .toggled {
+    margin: 0;
+    display: none;
+  }
+
+  .toggled.active {
+    display: flex;
   }
 }
 
@@ -355,5 +357,9 @@ footer .row div a img {
 
   .home {
     padding: 0 15%;
+  }
+
+  .toggled {
+    display: flex;
   }
 }
