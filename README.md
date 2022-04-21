@@ -1,6 +1,6 @@
 # Kamzzy Learns: An online learning platform for tech enthusiasts.
 ***
-## Deployed version: 
+## [Deployed Version](https://kamzzy.github.io/kamzzy-learns/)
 ## Built With
 * HTML/CSS
 * JavaScript
@@ -14,7 +14,7 @@ Run `npm install`
 ### Prerequisites
 * Node.JS
 
-### Authors
+### Author
 ***
 👤 Precious Akams
 
