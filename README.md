@@ -1,6 +1,7 @@
 # Kamzzy Learns: An online learning platform for tech enthusiasts.
 ***
 ## [Deployed Version](https://kamzzy.github.io/kamzzy-learns/)
+## [App Demo](https://www.loom.com/share/6ba06fa8092749d0a4cf2b227b409732)
 ## Built With
 * HTML/CSS
 * JavaScript

@@ -2,7 +2,7 @@ main {
   background-color: #fff;
   font-family: 'lato', sans-serif;
   color: #272a31;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .home {
@@ -48,6 +48,8 @@ main {
 
 footer h4 {
   text-align: center;
+  font-family: 'cocogoose', sans-serif;
+  padding-top: 12px;
 }
 
 .card h4 {

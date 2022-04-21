@@ -50,14 +50,14 @@ const featuredSpeakers = (feature) => {
   const card = document.createElement('div');
   card.classList = 'speaker-col col-md-6 row';
   const speakerImg = document.createElement('div');
-  speakerImg.classList = 'speaker-img col-sm-4';
+  speakerImg.classList = 'speaker-img col-sm-4 col-md-6 col-lg-5 col-xl-4';
   const sImg = document.createElement('img');
   sImg.setAttribute = 'src';
   sImg.src = feature.speakerImg;
   sImg.setAttribute = 'alt';
   sImg.alt.innerHTML = 'speakerImage';
   const speakerDiv = document.createElement('div');
-  speakerDiv.classList = 'speakerDiv col-sm-8';
+  speakerDiv.classList = 'speakerDiv col-sm-8 col-md-6 col-lg-7 col-xl-8';
   const h4 = document.createElement('h4');
   h4.innerHTML = feature.h4;
   const p = document.createElement('p');
@@ -67,8 +67,8 @@ const featuredSpeakers = (feature) => {
   hr2.id = 'hr';
   const p2 = document.createElement('p');
   p2.innerHTML = feature.p;
-  const row = document.querySelector('.row');
-  row.append(card);
+  const speakerRow = document.querySelector('.speakerRow');
+  speakerRow.append(card);
   card.append(speakerImg);
   speakerImg.append(sImg);
   card.append(speakerDiv);
@@ -81,17 +81,6 @@ fSpeakers.forEach((feature) => featuredSpeakers(feature));
 
 const border = document.querySelector('.border');
 const toggled = document.querySelector('.toggled');
-
-// function result() {
 border.addEventListener('click', () => {
   toggled.classList.toggle('active');
 });
-
-// }
-
-// const toggled = document.querySelector('.toggled');
-// toggled.style.display = 'none';
-// const border = document.querySelector('.border');
-// border.addEventListener('click', () => {
-//   toggled.style.display = 'flex';
-// });
