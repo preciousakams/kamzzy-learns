@@ -90,6 +90,7 @@ footer h4 {
 
 .main-col {
   background-color: #434344;
+  padding: 12px 2px;
 }
 
 .border {
@@ -102,8 +103,6 @@ footer h4 {
 .border:hover {
   background: #d3d3d3;
   color: #272a31;
-
-  /* cursor: pointer; */
   transition: 0.4s;
 }
 
@@ -122,6 +121,7 @@ footer h4 {
   background-color: #fff;
   color: #272a31;
   width: 100%;
+  padding: 5px 0;
 }
 
 .speaker-col {
