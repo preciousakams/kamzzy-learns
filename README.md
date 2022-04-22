@@ -1,6 +1,7 @@
 # Kamzzy Learns: An online learning platform for tech enthusiasts.
 ***
-## Deployed version: 
+## [Deployed Version](https://kamzzy.github.io/kamzzy-learns/)
+## [App Demo](https://www.loom.com/share/6ba06fa8092749d0a4cf2b227b409732)
 ## Built With
 * HTML/CSS
 * JavaScript
@@ -14,7 +15,7 @@ Run `npm install`
 ### Prerequisites
 * Node.JS
 
-### Authors
+### Author
 ***
 👤 Precious Akams
 
@@ -32,3 +33,4 @@ Give a ⭐️ if you like this project!
 
 ### Acknowledgments
 * Microverse
+* Original design idea: [Cindy Shin](https://www.behance.net/adagio07)
